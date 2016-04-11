@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>一键换肤</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#spring{background-image: url(spring.jpg); background-repeat:no-repeat;}
+		#summer{background-image: url(summer.jpg); background-repeat:no-repeat;}
+		#autumn{background-image: url(autumn.jpg); background-repeat:no-repeat;}
+		#winter{background-image: url(winter.jpg); background-repeat:no-repeat;}
+	</style>
+	<script type="text/javascript">
+		var thebody=document.getElementsByTagName('body');
+		function changeSpring() {
+			
+			thebody[0].id='spring';
+		}
+		function changeSummer(){
+			
+			thebody[0].id='summer';
+		}
+		function changeAutumn() {
+			
+			thebody[0].id='autumn';
+		}
+		function changeWinter(){
+	
+			thebody[0].id='winter';
+		}
+		changeSummer();
+	</script>
+</head>
+<body>
+	<div >
+		<button  onclick="changeSpring()">春</button>
+		<button  onclick="changeSummer()">夏</button>
+		<button  onclick="changeAutumn()">秋</button>
+		<button  onclick="changeWinter()">冬</button>
+	</div>
+</body>
+</html>
