@@ -4,30 +4,145 @@
   <title> 七夕快乐 </title>
   <meta charset="utf-8">
   <style>
-	div{
-		width:100px;
-		height:100px;
-		background:red;
-		border:1px solid #00F;
+	body{
+		background:rgb(17,21,44);
+		cursor:pointer;
+		font-family:"microsoft yahei";
 	}
+	#playground{
+		width:1440px;
+		height:900px;
+		margin:0 auto;
+		background:url("image/bg1.jpg") no-repeat;
+		position:relative;
+	}
+	
 	embed{
-		width:300px;
-		height:50px;
+		width:0px;
+		height:0px;
 		position:fixed;
+		right:0px;
+		bottom:0px;
+	}
+	.log,.currunt{
+		width:153px;
+		height:131px;
+		position:absolute;
+		top:320px;
+		left:675px;
+		text-align:center;
+		background:url("image/log.png");
+		line-height:120px;
+		font-weight:bold;
+	}
+	.log{
+		display:none;
+	}
+	.currunt{
+		display:block
+	}
+	#pic{
+		width:100px;
+		position:absolute;
+		top:30px;
+		left:190px;
+	}
+	#head{
+		display:block;
+		width:170px;
+		height:176px;
+		background:url("image/head.png");
+		position:absolute;
+		top:430px;
+		left:576px;
+		transform-origin:50% 100%;
 	}
   </style>
  </head>
  <body>
- <embed height="100" width="100" src="song.mp3" />
- <div id="d1"></div>
- <div id="d2"></div>
+  <embed height="100" width="100" src="song.mp3" />
+  <div id="playground">
+	<div class="log">#@!!%$&</div>
+	<div class="log">You're cute XD</div>
+	<div class="log">♪♫♪</div>
+	<div class="log" id="time"></div>
+	<div class="log">七夕快乐~</div>
+	<div class="log">❤</div>
+	<div class="log">you R my WORLD</div>	
+	<img src="image/star.png" id="pic">
+	<span id="head"></span>
+  </div>
   <script>
-	document.getElementById("d1").onclick=function(){
-		document.getElementById("d1").style.background="#000";
+	var play=0;
+	document.body.onclick=function(){
+		var timer=null;
+		var timer2=null;
+		var moved=0;
+		var moved2=0;
+		var step=1;
+		var roll=1;
+		var nth=parseInt(Math.random()*7+1);
+		var divs=playground.querySelectorAll("div");
+		for(var i=0;i<divs.length;i++){
+			divs[i].className="log";
+		}
+		var it=playground.querySelector("div:nth-child("+nth+")");
+		it.className="currunt";
+		it.style.color=radColor();
+		if(nth==6){
+			it.style.color="#F00";
+		}
+		if(nth%3==0){
+			it.style.fontSize="30px";
+		}
+		
+		var timer=setInterval(function(){
+			step+=0.01;
+			it.style.transform="scale("+step+")";
+			moved++;
+			if(moved==20){
+				clearInterval(timer);
+				timer=null;
+				moved=0;
+			}
+		},10);
+		if(play==0){
+			var timer2=setInterval(function(){
+				document.getElementById("head").style.transform="rotate("+moved2+"deg)";
+				if(moved2==-5){
+					roll=1;
+				}if(moved2==5){
+					roll=-1;
+				}
+				moved2+=roll;
+			},70);
+			play++;
+		}
 	}
-	document.getElementById("d2").onmouseover=function(){
-		document.getElementById("d2").style.background="#000";
+	var n=1;
+	var timer=setInterval(function(){
+		document.getElementById("pic").style.transform="rotate("+n+"deg)";
+		n++;
+	},20);
+	function radColor(){
+		return "rgb("+Math.floor(Math.random()*186+30)+","+Math.floor(Math.random()*186+30)+","+Math.floor(Math.random()*186+30)+")"
 	}
+	function calc(){
+		var now=new Date();
+		var target=new Date(2013,11,17,8,45);
+		var s=parseInt((now-target)/1000);
+		var D=parseInt(s/86400);
+		s-=D*86400;
+		var h=parseInt(s/3600);
+		s-=h*3600;
+		var m=parseInt(s/60);
+		s-=m*60;
+		h<10&&(h="0"+h);
+		m<10&&(m="0"+m);
+		s<10&&(s="0"+s);
+		time.innerHTML="第"+D+"天"+h+":"+m+":"+s;
+	}
+	var timer2=setInterval(calc);
   </script>
  </body>
 </html>
