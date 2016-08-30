@@ -1,0 +1,143 @@
+/*CSS Reset*/
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#f5f5f5;}
+a,a:hover{color:#333;}
+
+/*自适应样式*/
+.fixed{
+    position:fixed;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+[class^=col-] {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+.fixed-width{
+    width:980px;
+    margin:0 auto;
+}
+
+header{
+    height:70px;
+}
+#nav{
+     height:70px;
+     background:url("../images/topBg.png");
+}
+#nav ul{
+    float: left;
+}
+#nav ul>li{
+    float:left;
+}
+#nav a{
+    color:#fff;
+}
+#logo{
+    width:150px;
+    height:42px;
+    margin:14px;
+    float: left;
+}
+section{
+
+}
+#lb{
+    height:336px;
+    background:#fff;
+}
+
+/* media */
+/* 横屏 */
+@media screen and (orientation:landscape){
+
+}
+/* 竖屏 */
+@media screen and (orientation:portrait){
+
+}
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+
+}
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:767px){
+    .fixed-width{
+        width:100%;
+    }
+}
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+
+}
+/* windows UI 贴靠 */
+@media screen and (-ms-view-state:snapped){
+
+}
+/* 打印 */
+@media print{
+
+}
