@@ -103,7 +103,8 @@ section{
 }
 #lb{
     height:336px;
-    background:#fff;
+    background:#155799;
+	background-image: linear-gradient(120deg, #155799, #159957);
 }
 
 /* media */
