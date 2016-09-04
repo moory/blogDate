@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <!-- 兼容IE浏览器 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 兼容高速浏览模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- 移动设计优先(响应式) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>北冥木鱼</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-    <header>
-        <ul>
-            <li>
-                <a href="#">主页</a>
+    <div id="myPage">
+        <header>
+            <ul>
+                <li>
+                    <a href="#">主页</a>
+                </li>
+                <li>
+                    <a href="#">简历</a>
+                </li>
+                <li>
+                    <a href="#">博客</a>
+                </li>
+                <li>
+                    <a href="#">相册</a>
+                </li>
+                <li>
+                    <a href="#">作品</a>
+                </li>
+            </ul>
+        </header>
+        <ul id="main" class="slider">
+            <li id="p1" class="selected">
+                <div>1</div>
             </li>
-            <li>
-                <a href="#">简历</a>
+            <li id="p2" class="">
+                <div>2</div>
             </li>
-            <li>
-                <a href="#">博客</a>
+            <li id="p3" class="">
+                <div>3</div>
             </li>
-            <li>
-                <a href="#">相册</a>
+            <li id="p4" class="">
+                <div>4</div>
             </li>
-            <li>
-                <a href="#">作品</a>
+            <li id="p5" class="">
+                <div>5</div>
             </li>
         </ul>
-    </header>
-    <section>
-
-    </section>
-    <footer>
-
-    </footer>
+        <footer>
+            <p>This is footer</p>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
