@@ -84,13 +84,17 @@ header{
      background:url("../images/topBg.png");
 }
 #nav ul{
-    float: left;
+    float: right;
+    margin-right:55px;
 }
 #nav ul>li{
     float:left;
+    margin:25px 20px;
 }
 #nav a{
     color:#fff;
+    font-size: 20px;
+    font-family: "microsoft yahei",serif;
 }
 #logo{
     width:150px;
@@ -101,12 +105,51 @@ header{
 section{
 
 }
-#lb{
+#banner{
     height:336px;
     background:#155799;
 	background-image: linear-gradient(120deg, #155799, #159957);
 }
+#footer{
 
+}
+#login{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 900;
+    background:rgba(0,0,0,0.75);
+    color:#fff;
+    display: none;
+}
+#login .aside{
+    position:fixed;
+    right:0;
+    top:0;
+    bottom:0;
+    width:300px;
+    margin-right:50px;
+    background:#111;
+}
+#login .loginClose{
+    width:30px;
+    height:30px;
+    background:#fff;
+    border-radius:50%;
+    color:#000;
+    text-align: center;
+    float: right;
+}
+#login .loginForm{
+    position:absolute;
+    top:30%;
+    margin-left:50px;
+}
+#login a{
+    color:#fff;
+}
 /* media */
 /* 横屏 */
 @media screen and (orientation:landscape){
