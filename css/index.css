@@ -8,12 +8,14 @@ ul{
 }
 body {
     font-size: 1.6rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "microsoft yahei","Open Sans", sans-serif;
     color: #2c343b;
     background-color: #f2f2f2;
 }
-a {
-    color: #d44457;
+a{
+    color: #000000;
+}
+a:hover {
     text-decoration: none;
 }
 
@@ -30,6 +32,44 @@ header{
     top: 15px;
     z-index: 1002;
     background: none;
+    text-align: center;
+}
+header button.navbar-toggle{
+    background-color:rgba(255,255,255,0.7);
+    width:50px;
+    height: 40px;
+    float: none;
+    display: inline-block;
+
+}
+header .icon-bar{
+    background-color:#333;
+    margin:0 auto;
+}
+header ul{
+    text-align:center;
+    display: none;
+}
+header ul::after{
+    display:block;
+    content: "";
+    clear: both;
+}
+header li{
+    float: left;
+    margin-left: 1rem;
+}
+header a{
+    display: table-cell;
+    width:160px;
+    height:80px;
+    background:rgba(255,255,255,0.4);
+    vertical-align:middle;
+    transition: 0.3s;
+}
+header a:hover{
+    color: #337ab7;
+    background:rgba(255,255,255,0.7)
 }
 #main{
     position: relative;
@@ -89,4 +129,29 @@ footer{
     z-index:888;
     padding:20px;
     display:flex;
+    background-color:transparent;
+}
+@media only screen and (min-width: 768px) {
+    header a{
+        width:95px;
+        height: 60px;
+    }
+    header ul{
+        display: inline-block;
+    }
+    header button.navbar-toggle{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1170px) {
+    header a{
+        width:160px;
+        height: 80px;
+    }
+    header ul{
+        display: inline-block;
+    }
+    header button.navbar-toggle{
+        display: none;
+    }
 }
