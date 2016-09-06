@@ -25,6 +25,9 @@ a:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+#myNav{
+    margin:0 auto;
+}
 header{
     position: absolute;
     left: 0;
@@ -38,52 +41,49 @@ header button.navbar-toggle{
     background-color:rgba(255,255,255,0.7);
     width:50px;
     height: 40px;
+    margin-right: 55px;
 }
 header .icon-bar{
     background-color:#333;
     margin:0 auto;
 }
-header ol.list-group{
-    width:100px;
-    float: right;
+#myNav{
+    box-shadow: none;
 }
-header ol a{
-
-}
-header a{
+#myNav a{
     display: table-cell;
     background:rgba(255,255,255,0.4);
     vertical-align:middle;
     transition: 0.3s;
     text-align: center;
 }
-header ul{
-    text-align:center;
-    display: none;
+#myNav ul{
+    float: right;
 }
-header li{
-    text-align: center;
-}
-header ul::after{
+#myNav ul::after{
     display:block;
     content: "";
     clear: both;
 }
-header ul li{
-    float: left;
+#myNav ul li{
     margin-left: 1rem;
+    text-align:center;
+
 }
-header ul a{
+#myNav ul li a{
     width:160px;
-    height:80px;
+    height:20px;line-height: 20px;
 }
-header a:hover{
+#myNav a:hover,#myNav li.active a{
     color: #337ab7;
     background:rgba(255,255,255,0.7)
 }
 #main{
-    position: relative;
-    height:700px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
     overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ header a:hover{
     transform: translateX(100%);
     background-size:cover;
     background-repeat: no-repeat;
-    background-size:center center;
+    background-position:center center;
 
 }
 #main li.selected{
@@ -119,6 +119,17 @@ header a:hover{
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+#main .mainTab{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+#main .test{
+    min-height:100px;
+    height:20%;
+    background:rgba(255,255,255,0.7);
+}
 #p1{
     background-image:url("../img/bg1.jpg");
 }
@@ -134,34 +145,37 @@ header a:hover{
 #p5{
     background-image:url("../img/bg5.jpg");
 }
-footer{
+#footer{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
     width:100%
     z-index:888;
     padding:20px;
     display:flex;
     background-color:transparent;
+    color:#fff;
 }
 @media only screen and (min-width: 768px) {
-    header a{
+    #myNav ul{
+        float: none;
+        display: table;
+        margin:0 auto;
+    }
+    #myNav ul li a{
         width:95px;
         height: 60px;
     }
-    header ul{
-        display: inline-block;
-    }
-    header button.navbar-toggle{
-        display: none;
-    }
 }
 @media only screen and (min-width: 1170px) {
-    header a{
+    #myNav ul{
+        float: none;
+        display: table;
+        margin:0 auto;
+    }
+    #myNav ul li a{
         width:160px;
-        height: 80px;
-    }
-    header ul{
-        display: inline-block;
-    }
-    header button.navbar-toggle{
-        display: none;
+        height: 90px;
     }
 }
