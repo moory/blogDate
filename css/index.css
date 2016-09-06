@@ -38,34 +38,44 @@ header button.navbar-toggle{
     background-color:rgba(255,255,255,0.7);
     width:50px;
     height: 40px;
-    float: none;
-    display: inline-block;
-
 }
 header .icon-bar{
     background-color:#333;
     margin:0 auto;
 }
+header ol.list-group{
+    width:100px;
+    float: right;
+}
+header ol a{
+
+}
+header a{
+    display: table-cell;
+    background:rgba(255,255,255,0.4);
+    vertical-align:middle;
+    transition: 0.3s;
+    text-align: center;
+}
 header ul{
     text-align:center;
     display: none;
+}
+header li{
+    text-align: center;
 }
 header ul::after{
     display:block;
     content: "";
     clear: both;
 }
-header li{
+header ul li{
     float: left;
     margin-left: 1rem;
 }
-header a{
-    display: table-cell;
+header ul a{
     width:160px;
     height:80px;
-    background:rgba(255,255,255,0.4);
-    vertical-align:middle;
-    transition: 0.3s;
 }
 header a:hover{
     color: #337ab7;
