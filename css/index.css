@@ -6,11 +6,17 @@ ul{
     margin:0;
     padding:0;
 }
+html,body{
+    height:100%;
+}
+html{
+    font-size: 62.5%;
+}
 body {
     font-size: 1.6rem;
     font-family: "microsoft yahei","Open Sans", sans-serif;
     color: #2c343b;
-    background-color: #f2f2f2;
+    background-color: #DDD;
 }
 a{
     color: #000000;
@@ -18,9 +24,13 @@ a{
 a:hover {
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
 
-/*Main Style*/
+/*Header and Footer Style*/
 #myPage{
+    height: 100%;
     position:relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,11 +89,8 @@ header .icon-bar{
     background:rgba(255,255,255,0.7)
 }
 #main{
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
+    position: relative;
+    height:100%;
     overflow: hidden;
 }
 
@@ -119,16 +126,16 @@ header .icon-bar{
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+#main li.ismove,#main li.selected{
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
 #main .mainTab{
     position: absolute;
     top:50%;
     left:50%;
     transform: translateY(-50%) translateX(-50%);
-}
-#main .test{
-    min-height:100px;
-    height:20%;
-    background:rgba(255,255,255,0.7);
 }
 #p1{
     background-image:url("../img/bg1.jpg");
@@ -146,17 +153,26 @@ header .icon-bar{
     background-image:url("../img/bg5.jpg");
 }
 #footer{
-    position:fixed;
+    position:absolute;
     bottom: 0;
-    right: 0;
     left:0;
-    width:100%
-    z-index:888;
+    width:100%;
+    z-index:1001;
     padding:20px;
     display:flex;
     background-color:transparent;
     color:#fff;
 }
+
+/*Main inner Style*/
+#main .test{
+    min-height:100px;
+    height:20%;
+    background:rgba(255,255,255,0.7);
+}
+
+
+/*PC-small and pad*/
 @media only screen and (min-width: 768px) {
     #myNav ul{
         float: none;
@@ -168,6 +184,7 @@ header .icon-bar{
         height: 60px;
     }
 }
+/*PC-large*/
 @media only screen and (min-width: 1170px) {
     #myNav ul{
         float: none;
