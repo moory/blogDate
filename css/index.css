@@ -6,9 +6,7 @@ ul{
     margin:0;
     padding:0;
 }
-html,body{
-    height:100%;
-}
+
 html{
     font-size: 62.5%;
 }
@@ -109,6 +107,7 @@ header .icon-bar{
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center center;
+    text-align: center;
 
 }
 #main li.selected{
@@ -132,10 +131,7 @@ header .icon-bar{
     transition: transform 0.5s;
 }
 #main .mainTab{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translateY(-50%) translateX(-50%);
+    margin-top:70px;
 }
 #p1{
     background-image:url("../img/bg1.jpg");
@@ -165,13 +161,22 @@ header .icon-bar{
 }
 
 /*Main inner Style*/
-#main .test{
-    min-height:100px;
-    height:20%;
-    background:rgba(255,255,255,0.7);
+#main .mainTab{
+    width:70%;
+    margin-top:80px;
+    display: inline-block;
+}
+#main .textContener{
+    text-align: left;
+    background-color:rgba(255,255,255,0.8)
 }
 
 
+@media only screen and (min-width: 465px){
+    #main .mainTab{
+        margin-top:120px;
+    }
+}
 /*PC-small and pad*/
 @media only screen and (min-width: 768px) {
     #myNav ul{
@@ -183,6 +188,12 @@ header .icon-bar{
         width:95px;
         height: 60px;
     }
+    #main .mainTab{
+        margin-top:150px;
+    }
+    html,body{
+        height:100%;
+    }
 }
 /*PC-large*/
 @media only screen and (min-width: 1170px) {
@@ -193,6 +204,12 @@ header .icon-bar{
     }
     #myNav ul li a{
         width:160px;
-        height: 90px;
+        height: 80px;
+    }
+    #main .mainTab{
+        margin-top:200px;
+    }
+    html,body{
+        height:100%;
     }
 }
