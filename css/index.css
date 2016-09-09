@@ -214,6 +214,9 @@ header .icon-bar{
 #p1 .mainTab{
     max-width: 600px;
 }
+#p1>div>h1,#p1>div>h4{
+    color:#fff;
+}
 #p2 .mainTab{
     max-width: 1200px;
 }
@@ -227,7 +230,7 @@ header .icon-bar{
 #main .textContainer{
     text-align: left;
     background-color:rgba(255,255,255,0.4);
-    padding: 5px;
+    padding: 40px 45px;
 }
 
 @media only screen and (min-width: 465px){
@@ -249,6 +252,10 @@ header .icon-bar{
         width:95px;
         height: 60px;
     }
+    #p1 h1{
+        margin-top:170px;
+        margin-bottom:68px;
+    }
     #main .mainTab{
         margin-top:150px;
     }
@@ -267,10 +274,15 @@ header .icon-bar{
         width:160px;
         height: 80px;
     }
+    #p1 h1{
+        margin-top:150px;
+        margin-bottom:68px;
+    }
     #main .mainTab{
         margin-top:200px;
     }
     html{
         height: 100%;
+        min-height: 1000px;
     }
 }
