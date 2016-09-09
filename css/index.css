@@ -163,17 +163,22 @@ header .icon-bar{
 }
 
 /*Main inner Style*/
+#p1 .mainTab{
+    max-width: 600px;
+}
+#p2 .mainTab{
+    max-width: 1200px;
+}
 #main .mainTab{
     width:70%;
     margin-top:80px;
     margin-bottom:100px;
     display: inline-block;
     min-height: 500px;
-    max-width: 600px;
 }
-#main .textContener{
+#main .textContainer{
     text-align: left;
-    background-color:rgba(255,255,255,0.8)
+    background-color:rgba(255,255,255,0.8);
 }
 
 @media only screen and (min-width: 465px){
