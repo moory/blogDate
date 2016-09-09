@@ -15,7 +15,7 @@ html{
 body {
     font-size: 1.6rem;
     font-family: "microsoft yahei","Open Sans", sans-serif;
-    color: #2c343b;
+    color: #333;
     background-color: #DDD;
 }
 a{
@@ -94,6 +94,7 @@ header .icon-bar{
     overflow: hidden;
 }
 
+/*页面动画*/
 #main li{
     position: absolute;
     top: 0;
@@ -110,7 +111,6 @@ header .icon-bar{
     background-repeat: no-repeat;
     background-position:center center;
     text-align: center;
-
 }
 #main li.selected{
     position: relative;
@@ -132,6 +132,45 @@ header .icon-bar{
     -moz-transition: -moz-transform 0.5s;
     transition: transform 0.5s;
 }
+
+/*文字动画*/
+#main li.selected p{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+ }
+#main li.moveLeft p{
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+#main li p{
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+}
+#main li.selected p{
+    opacity: 1;
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+}
+#main li p,#main .moveLeft p{
+    opacity: 0;
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+}
+
 #main .mainTab{
     margin-top:70px;
 }
@@ -178,7 +217,7 @@ header .icon-bar{
 }
 #main .textContainer{
     text-align: left;
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.4);
 }
 
 @media only screen and (min-width: 465px){
