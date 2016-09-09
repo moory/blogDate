@@ -134,7 +134,7 @@ header .icon-bar{
 }
 
 /*文字动画*/
-#main li.selected p{
+#main li.selected p,#main li.selected h4,#main li.selected .btn{
     opacity: 1;
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -142,7 +142,7 @@ header .icon-bar{
     -o-transform: translateX(0px);
     transform: translateX(0px);
  }
-#main li.moveLeft p{
+#main li.moveLeft p,#main li.moveLeft h4,#main li.moveLeft .btn{
     opacity: 0;
     -webkit-transform: translateX(-100px);
     -moz-transform: translateX(-100px);
@@ -150,7 +150,7 @@ header .icon-bar{
     -o-transform: translateX(-100px);
     transform: translateX(-100px);
 }
-#main li p{
+#main li p,#main li h4,#main li .btn{
     opacity: 0;
     -webkit-transform: translateX(100px);
     -moz-transform: translateX(100px);
@@ -159,10 +159,19 @@ header .icon-bar{
     transform: translateX(100px);
 }
 #main li.selected p{
-    opacity: 1;
-    -webkit-transition: opacity 0.4s 0.3s, -webkit-transform 0.5s 0.2s;
-    -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.2s;
-    transition: opacity 0.4s 0.3s, transform 0.5s 0.2s;
+    -webkit-transition: opacity 0.4s 0.3s, -webkit-transform 0.5s 0.3s;
+    -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.3s;
+    transition: opacity 0.4s 0.3s, transform 0.5s 0.3s;
+}
+#main li.selected h4{
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+}
+#main li.selected .btn{
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s, background-color 0.2s 0s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s, background-color 0.2s 0s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
 }
 #main li p,#main .moveLeft p{
     opacity: 0;
@@ -175,19 +184,19 @@ header .icon-bar{
     margin-top:70px;
 }
 #p1{
-    background-image:url("../img/bg1.jpg");
+    background-image:url("../img/bg11.jpg");
 }
 #p2{
-    background-image:url("../img/bg2.jpg");
+    background-image:url("../img/bg22.jpg");
 }
 #p3{
-    background-image:url("../img/bg3.jpg");
+    background-image:url("../img/bg33.jpg");
 }
 #p4{
-    background-image:url("../img/bg4.jpg");
+    background-image:url("../img/bg44.jpg");
 }
 #p5{
-    background-image:url("../img/bg5.jpg");
+    background-image:url("../img/bg22.jpg");
 }
 #footer{
     position:absolute;
