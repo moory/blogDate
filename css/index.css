@@ -233,6 +233,37 @@ header .icon-bar{
     padding: 40px 45px;
 }
 
+/*Footer style*/
+#footer i{
+    width:40px;
+    height:40px;
+    margin-right:10px;
+    cursor: pointer;
+}
+#footer i:nth-child(1){
+    background: url("../img/github1.png");
+}
+#footer i:nth-child(2){
+    background: url("../img/weibo1.png");
+}
+#footer i:nth-child(3){
+    background: url("../img/weixin1.png");
+}
+#footer i:nth-child(4){
+    background: url("../img/zhihu1.png");
+}
+#footer i:nth-child(1):hover{
+    background: url("../img/github2.png");
+}
+#footer i:nth-child(2):hover{
+    background: url("../img/weibo2.png");
+}
+#footer i:nth-child(3):hover{
+    background: url("../img/weixin2.png");
+}
+#footer i:nth-child(4):hover{
+    background: url("../img/zhihu2.png");
+}
 @media only screen and (min-width: 465px){
     #main .mainTab{
         margin-top:120px;
