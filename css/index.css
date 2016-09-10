@@ -290,8 +290,9 @@ header .icon-bar{
     #main .mainTab{
         margin-top:150px;
     }
-    html,body{
+    body{
         height: 100%;
+        min-height: 860px;
     }
 }
 /*PC-large*/
