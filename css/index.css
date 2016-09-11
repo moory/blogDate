@@ -220,6 +220,17 @@ header .icon-bar{
 #p2 .mainTab{
     max-width: 1200px;
 }
+#p4 .row{
+    position: relative;
+}
+#p4 .content{
+    float:left;
+    position: static;
+    margin-bottom: 20px;
+}
+#p4 .btn{
+    margin:20px 10px;
+}
 #main .mainTab{
     width:70%;
     margin-top:80px;
