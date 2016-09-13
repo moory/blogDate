@@ -228,8 +228,19 @@ header .icon-bar{
     position: static;
     margin-bottom: 20px;
 }
+/*#p4 .content>div{*/
+    /*position: relative;*/
+/*}*/
 #p4 .btn{
     margin:20px 10px;
+}
+#p4 .modal-img{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:180px;
+    height:240px;
+    background:rgba(0,0,0,0.4);
 }
 #main .mainTab{
     width:70%;
@@ -252,28 +263,28 @@ header .icon-bar{
     cursor: pointer;
 }
 #footer i:nth-child(1){
-    background: url("../img/github1.png");
+    background: url("../img/iconlist.png") no-repeat;
 }
 #footer i:nth-child(2){
-    background: url("../img/weibo1.png");
+    background: url("../img/iconlist.png") no-repeat 0px -40px;
 }
 #footer i:nth-child(3){
-    background: url("../img/weixin1.png");
+    background: url("../img/iconlist.png") no-repeat 0px -80px;
 }
 #footer i:nth-child(4){
-    background: url("../img/zhihu1.png");
+    background: url("../img/iconlist.png") no-repeat 0px -120px;
 }
 #footer i:nth-child(1):hover{
-    background: url("../img/github2.png");
+    background: url("../img/iconlist.png") no-repeat -40px -0px;
 }
 #footer i:nth-child(2):hover{
-    background: url("../img/weibo2.png");
+    background: url("../img/iconlist.png") no-repeat -40px -40px;
 }
 #footer i:nth-child(3):hover{
-    background: url("../img/weixin2.png");
+    background: url("../img/iconlist.png") no-repeat -40px -80px;
 }
 #footer i:nth-child(4):hover{
-    background: url("../img/zhihu2.png");
+    background: url("../img/iconlist.png") no-repeat -40px -120px;
 }
 @media only screen and (min-width: 465px){
     #main .mainTab{
@@ -295,15 +306,15 @@ header .icon-bar{
         height: 60px;
     }
     #p1 h1{
-        margin-top:175px;
+        margin-top:185px;
         margin-bottom:68px;
     }
     #main .mainTab{
         margin-top:150px;
     }
-    body{
+    html{
         height: 100%;
-        min-height: 860px;
+        min-height: 960px;
     }
 }
 /*PC-large*/
@@ -326,6 +337,6 @@ header .icon-bar{
     }
     html{
         height: 100%;
-        min-height: 1000px;
+        min-height: 960px;
     }
 }
