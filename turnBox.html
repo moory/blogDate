@@ -5,7 +5,7 @@
 <title>turnBox</title>
 <style type="text/css">
 body{
-    background: url(bbg.jpg) no-repeat;
+    background:#eee url(bbg.jpg) no-repeat;
 }
 .m-demo{
 	position:absolute;
@@ -14,6 +14,8 @@ body{
 	width:400px;
 	height:400px;
 	margin:-200px;
+	-webkit-perspective:1000px ;
+	-moz-perspective:1000px ;
 	perspective:1000px;
 	cursor:default;
 }
@@ -21,8 +23,13 @@ body{
 	position:absolute;
 	width:100%;
 	height:100%;
-	transform-style:preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	-webkit-animation:rotate 5s 15s linear infinite both;
+	-o-animation: rotate 5s 15s linear infinite both;
+	animation: rotate 5s 15s linear infinite both;
 }
 .m-demo .box>div{
 	position:absolute;
@@ -39,21 +46,33 @@ body{
 }
 .m-demo .box .top{
 	-webkit-animation:top 2s 2s linear both;
+	-o-animation: top 2s 2s linear both;
+	animation: top 2s 2s linear both;
 }
 .m-demo .box .bottom{
 	-webkit-animation:bottom 2s 4s linear both;
+	-o-animation:bottom 2s 4s linear both ;
+	animation: bottom 2s 4s linear both;
 }
 .m-demo .box .left{
 	-webkit-animation:left 2s 6s linear both;
+	-o-animation: left 2s 6s linear both;
+	animation: left 2s 6s linear both;
 }
 .m-demo .box .right{
 	-webkit-animation:right 2s 8s linear both;
+	-o-animation: right 2s 8s linear both;
+	animation:right 2s 8s linear both ;
 }
 .m-demo .box .back{
 	-webkit-animation:back 2s 10s linear both;
+	-o-animation: back 2s 10s linear both;
+	animation: back 2s 10s linear both;
 }
 .m-demo .box .front{
 	-webkit-animation:front 2s 12s linear both;
+	-o-animation:front 2s 12s linear both ;
+	animation: front 2s 12s linear both;
 }
 .m-demo:hover .box>div{
 	border-color:rgba(0,0,0,0);color:#fff;
@@ -77,25 +96,67 @@ body{
 	background:rgba(255,0,0,0.8);
 }
 @-webkit-keyframes rotate{
-    100%{-webkit-transform:rotate3d(1,1,1,360deg);}
+    100%{
+		-webkit-transform:rotate3d(1,1,1,360deg);
+		-moz-transform: rotate3d(1,1,1,360deg);
+		-ms-transform:rotate3d(1,1,1,360deg) ;
+		-o-transform: rotate3d(1,1,1,360deg);
+		transform: rotate3d(1,1,1,360deg);
+	}
 }
 @-webkit-keyframes top{
-    100%{-webkit-transform:rotateX(90deg) translateZ(200px);}
+    100%{
+		-webkit-transform:rotateX(90deg) translateZ(200px);
+		-moz-transform:rotateX(90deg) translateZ(200px) ;
+		-ms-transform: rotateX(90deg) translateZ(200px);
+		-o-transform: rotateX(90deg) translateZ(200px);
+		transform:rotateX(90deg) translateZ(200px) ;
+	}
 }
 @-webkit-keyframes bottom{
-    100%{-webkit-transform:rotateX(-90deg) translateZ(200px);}
+    100%{
+		-webkit-transform:rotateX(-90deg) translateZ(200px);
+		-moz-transform:rotateX(-90deg) translateZ(200px) ;
+		-ms-transform:rotateX(-90deg) translateZ(200px) ;
+		-o-transform: rotateX(-90deg) translateZ(200px);
+		transform: rotateX(-90deg) translateZ(200px);
+	}
 }
 @-webkit-keyframes left{
-    100%{-webkit-transform:rotateY(-90deg) translateZ(200px);}
+    100%{
+		-webkit-transform:rotateY(-90deg) translateZ(200px);
+		-moz-transform:rotateY(-90deg) translateZ(200px) ;
+		-ms-transform:rotateY(-90deg) translateZ(200px) ;
+		-o-transform:rotateY(-90deg) translateZ(200px) ;
+		transform: rotateY(-90deg) translateZ(200px);
+	}
 }
 @-webkit-keyframes right{
-    100%{-webkit-transform:rotateY(90deg) translateZ(200px);}
+    100%{
+		-webkit-transform:rotateY(90deg) translateZ(200px);
+		-moz-transform: rotateY(90deg) translateZ(200px);
+		-ms-transform: rotateY(90deg) translateZ(200px);
+		-o-transform: rotateY(90deg) translateZ(200px);
+		transform: rotateY(90deg) translateZ(200px);
+	}
 }
 @-webkit-keyframes front{
-    100%{-webkit-transform:translateZ(200px);}
+    100%{
+		-webkit-transform:translateZ(200px);
+		-moz-transform: translateZ(200px);
+		-ms-transform: translateZ(200px);
+		-o-transform:translateZ(200px) ;
+		transform: translateZ(200px);
+	}
 }
 @-webkit-keyframes back{
-    100%{-webkit-transform:rotateY(180deg) translateZ(200px);}
+    100%{
+		-webkit-transform:rotateY(180deg) translateZ(200px);
+		-moz-transform:rotateY(180deg) translateZ(200px) ;
+		-ms-transform:rotateY(180deg) translateZ(200px) ;
+		-o-transform:rotateY(180deg) translateZ(200px) ;
+		transform: rotateY(180deg) translateZ(200px);
+	}
 }
 </style>
 </head>
