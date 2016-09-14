@@ -1,6 +1,8 @@
 /**
- * Created by bjwsl-001 on 2016/9/6.
+ * Created by moory on 2016/9/6.
  */
+
+//轮播控制
 $("#myNav ul").on("click","li",function(e){
     var now=$("#myNav li.active").index("#myNav li")+1;
     $("#myNav li").removeClass("active");
@@ -25,6 +27,8 @@ function prevSlide(now,target){
     $("#main li:nth-child("+target+")").prevAll().addClass("moveLeft");
     $("#main li:nth-child("+target+")").nextAll().removeClass("moveLeft");
 }
+
+//相册动效
 $("#all").click(function(){
     unmiss();
 });
@@ -67,8 +71,8 @@ function unmiss(str){
             },500
         );
     }else{
-        $("img").parent().css("display","block");
-        $("img").animate({
+        $("#p4 img").parent().css("display","block");
+        $("#p4 img").animate({
                 "width":"180px",
                 "height":"240px",
                 "margin":"0px",
@@ -94,3 +98,4 @@ function fly(str){
         });
     });
 }
+

@@ -88,6 +88,24 @@ header .icon-bar{
     color: #337ab7;
     background:rgba(255,255,255,0.7)
 }
+#myNav a span::before{
+    opacity: 0;
+    content: "[ ";
+    transition: opacity 1s;
+}
+#myNav a:hover span::before{
+    content: "[ ";
+    opacity: 1;
+}
+#myNav a span::after{
+    opacity: 0;
+    content: " ]";
+    transition: opacity 1s;
+}
+#myNav a:hover span::after{
+    content: " ]";
+    opacity: 1;
+}
 #main{
     position: relative;
     height:100%;
@@ -257,7 +275,6 @@ header .icon-bar{
     text-align: left;
     background-color:rgba(255,255,255,0.4);
     padding: 40px 45px;
-
 }
 
 /*Footer style*/
