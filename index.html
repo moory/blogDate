@@ -11,6 +11,7 @@
     <link rel="icon" href="images/favicon.ico"/>
     <title>北冥木鱼</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -190,6 +191,11 @@
                             <img src="img/snake.jpg" alt="JS作品">
                         </a>
                     </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                        <a href="#" class="thumbnail">
+                            <img src="img/draw.jpg" alt="JS作品">
+                        </a>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -204,77 +210,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index3.js"></script>
     <script>
-        $("#all").click(function(){
-            unmiss();
+        $("#p5 .animated").on("mouseover",function(){
+            $(this).addClass("animated bounce");
         });
-        $("#btn1").click(function(){
-            miss("fruit");
-            miss("coike");
-            unmiss("drink");
-            fly("drink");
-        });
-        $("#btn2").click(function(){
-            miss("fruit");
-            miss("drink");
-            unmiss("coike");
-            fly("coike");
-        });
-        $("#btn3").click(function(){
-            miss("drink");
-            miss("coike");
-            unmiss("fruit");
-            fly("fruit");
-        });
-        function miss(str){
-            $("."+str).animate({
-                "width":"0px",
-                "height":"0px",
-                "margin":"120px",
-                "opacity":"0.3"
-            },500,function(){
-                $("."+str).parent().css("display","none");
-            });
-        };
-        function unmiss(str){
-            if(str){
-                $("."+str).parent().css("display","block");
-                $("."+str).animate({
-                            "width":"180px",
-                            "height":"240px",
-                            "margin":"0px",
-                            "opacity":"1"
-                        },500
-                );
-            }else{
-                $("img").parent().css("display","block");
-                $("img").animate({
-                            "width":"180px",
-                            "height":"240px",
-                            "margin":"0px",
-                            "opacity":"1"
-                        },500
-                );
-            }
-        };
-        function fly(str){
-            var address=[];
-            $(".content:visible").each(function(i,elem){
-                address.push([elem.offsetLeft,elem.offsetTop]);
-                $(this).css("left",address[i][0]);
-                $(this).css("top",address[i][1]);
-            });
-            $(".content").css("position","absolute");
-            $("."+str).each(function(i,elem){
-                $(this).parent().animate({
-                    "left":address[i][0],
-                    "top":address[i][1],
-                },500,function(){
-                    $(".content").css("position","");
-                });
-            });
-        }
-
-
     </script>
 </body>
 </html>
