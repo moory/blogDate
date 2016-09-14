@@ -227,6 +227,10 @@ header .icon-bar{
     float:left;
     position: static;
     margin-bottom: 20px;
+
+}
+#p4 img{
+    border-radius: 10px;
 }
 /*#p4 .content>div{*/
     /*position: relative;*/
@@ -253,6 +257,7 @@ header .icon-bar{
     text-align: left;
     background-color:rgba(255,255,255,0.4);
     padding: 40px 45px;
+
 }
 
 /*Footer style*/
