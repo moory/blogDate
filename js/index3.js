@@ -99,3 +99,12 @@ function fly(str){
     });
 }
 
+//FOOTER 按钮事件
+$("#footer>i").on("mouseover",function(){
+    var num=$(this).index();
+    $("#footer b:nth-of-type("+num+")").css("display","block");
+});
+$("#footer>i").on("mouseout",function(){
+    var num=$(this).index();
+    $("#footer b:nth-of-type("+num+")").css("display","none");
+});

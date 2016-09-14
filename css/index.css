@@ -279,12 +279,13 @@ header .icon-bar{
 
 /*Footer style*/
 #footer i{
+    display: inline-block;
     width:40px;
     height:40px;
     margin-right:10px;
     cursor: pointer;
 }
-#footer i:nth-child(1){
+#footer>a:nth-child(1)>i{
     background: url("../img/iconlist.png") no-repeat;
 }
 #footer i:nth-child(2){
@@ -293,10 +294,10 @@ header .icon-bar{
 #footer i:nth-child(3){
     background: url("../img/iconlist.png") no-repeat 0px -80px;
 }
-#footer i:nth-child(4){
+#footer>a>i{
     background: url("../img/iconlist.png") no-repeat 0px -120px;
 }
-#footer i:nth-child(1):hover{
+#footer>a:nth-child(1)>i:hover{
     background: url("../img/iconlist.png") no-repeat -40px -0px;
 }
 #footer i:nth-child(2):hover{
@@ -305,8 +306,22 @@ header .icon-bar{
 #footer i:nth-child(3):hover{
     background: url("../img/iconlist.png") no-repeat -40px -80px;
 }
-#footer i:nth-child(4):hover{
+#footer>a>i:hover{
     background: url("../img/iconlist.png") no-repeat -40px -120px;
+}
+#footer b{
+    width:300px;
+    height: 300px;
+    position: absolute;
+    top:-290px;
+    left: 10px;
+    display: none;
+}
+#footer b:nth-last-child(2){
+    background: url("../img/weibo_ma.jpg");
+}
+#footer b:nth-last-child(1){
+    background: url("../img/weixin_ma.jpg");
 }
 @media only screen and (min-width: 465px){
     #main .mainTab{
