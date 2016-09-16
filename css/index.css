@@ -239,12 +239,14 @@ header .icon-bar{
     max-width: 1200px;
 }
 #p4 .row{
+    margin:0 auto;
     position: relative;
 }
 #p4 .content{
     float:left;
     position: static;
     margin-bottom: 20px;
+    overflow: hidden;
 
 }
 #p4 img{
@@ -263,6 +265,9 @@ header .icon-bar{
     width:180px;
     height:240px;
     background:rgba(0,0,0,0.4);
+}
+#p5 .thumbnail{
+    background-color: rgba(255,255,255,0.4);
 }
 #main .mainTab{
     width:70%;
@@ -371,6 +376,9 @@ header .icon-bar{
     }
     #main .mainTab{
         margin-top:200px;
+    }
+    #p4 .mainTab{
+        min-width:1200px;
     }
     html{
         height: 100%;
