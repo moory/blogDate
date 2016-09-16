@@ -268,6 +268,7 @@ header .icon-bar{
 }
 #p5 .thumbnail{
     background-color: rgba(255,255,255,0.4);
+    z-index: 19;
 }
 #main .mainTab{
     width:70%;
