@@ -60,7 +60,7 @@
   </style>
  </head>
  <body>
-  <embed height="100" width="100" src="video/song.mp3" />
+  <embed height="100" width="100" src="song.mp3" />
   <div id="playground">
 	<div class="log">#@!!%$&</div>
 	<div class="log">You're cute XD</div>
