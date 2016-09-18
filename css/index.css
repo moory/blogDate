@@ -225,7 +225,7 @@ header .icon-bar{
     padding:20px;
     display:flex;
     background-color:transparent;
-    color:#fff;014C8B
+    color:#fff;
 }
 
 /*Main inner Style*/
@@ -329,6 +329,16 @@ header .icon-bar{
 #footer b:nth-last-child(1){
     background: url("../img/weixin_ma.jpg");
 }
+#footer span{
+    padding:0 10px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+#footer span a{
+    color:#ddd;
+}
 @media only screen and (min-width: 465px){
     #main .mainTab{
         margin-top:120px;
@@ -338,7 +348,7 @@ header .icon-bar{
     }
 }
 /*PC-small and pad*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     #myNav ul{
         float: none;
         display: table;
@@ -359,6 +369,7 @@ header .icon-bar{
         height: 100%;
         min-height: 960px;
     }
+
 }
 /*PC-large*/
 @media only screen and (min-width: 1170px) {
