@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 点灯游戏 </title>
+  <meta charset="utf-8">
+  <style>
+	body{
+		background-color:#ddd;
+	}
+	section{
+		width:400px;
+		height:400px;
+		margin:0 auto;
+	}
+	button{
+		width:100px;
+		height:100px;
+		margin-top:-5px;
+	}
+  </style>
+ </head>
+ <body>
+  <h1>点灯游戏</h1>
+  <p>单击点亮一个小方块，并改变周围方块的状态，当所有的方块都被点亮则游戏胜利。加油\(^o^)/~</p>
+  <section>
+	<button id="b00" onclick="game.click(this)"></button><button id="b01" onclick="game.click(this)"></button ><button id="b02" onclick="game.click(this)"></button><button id="b03"onclick="game.click(this)"></button>
+	<button id="b10" onclick="game.click(this)"></button><button id="b11" onclick="game.click(this)"></button><button id="b12" onclick="game.click(this)"></button><button id="b13" onclick="game.click(this)"></button>
+	<button id="b20" onclick="game.click(this)"></button><button id="b21" onclick="game.click(this)"></button><button id="b22" onclick="game.click(this)"></button><button id="b23" onclick="game.click(this)"></button>
+	<button id="b30" onclick="game.click(this)"></button><button id="b31" onclick="game.click(this)"></button><button id="b32" onclick="game.click(this)"></button><button id="b33" onclick="game.click(this)"></button>
+  </section>
+  <script>
+	var game={
+		blocks:[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+		steps:0,
+		gameStart:function(){
+		for(var i=0;i<4;i++)
+			for(var j=0;j<4;j++){
+				this.blocks[i][j]=document.getElementById("b"+i+j);
+			}
+		},
+		click:function(obj){
+			var i=parseInt(obj.id.substr(1,1));
+			var j=parseInt(obj.id.substr(2,1));
+			this.change(obj);
+			i<3 && this.change(this.blocks[i+1][j]);
+			i>0 && this.change(this.blocks[i-1][j]);
+			j<3 && this.change(this.blocks[i][j+1]);
+			j>0 && this.change(this.blocks[i][j-1]);
+			this.steps++;
+			if(this.isGameOver()==1){
+				alert(this.steps<5?
+				"成功通关！共用"+this.steps+"步，神走位逆天了！":this.steps<9?"成功通关！共用"+this.steps+"步，挺厉害呀":
+				this.steps<13?"成功通关！共用"+this.steps+"步，还不错":
+				"成功通关！共用"+this.steps+"步，再接再厉");
+				this.gameReset();
+			} 	
+		},
+		change:function(obj){
+			var i=obj.id.substr(1,1);
+			var j=obj.id.substr(2,1);
+			obj.style.background!=="yellow"?
+				obj.style.background="yellow":
+				obj.style.background="buttonface";
+		},
+		isGameOver:function(){
+			var n=0;
+			for(var i=0;i<4;i++)
+				for(var j=0;j<4;j++){
+					this.blocks[i][j].style.background=="yellow" && n++;
+				}
+			if(n==16)  return 1;
+			else return 0;
+		},
+		gameReset:function(){
+			this.steps=0;
+			for(var i=0;i<4;i++)
+				for(var j=0;j<4;j++){
+					this.blocks[i][j].style.background="buttonface";
+				}
+		}
+	}
+	game.gameStart();
+  </script>
+ </body>
+</html>

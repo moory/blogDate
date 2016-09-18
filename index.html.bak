@@ -52,9 +52,11 @@
                     <h4>WEB前端开发工程师</h4>
                     <div class="textContainer">
                         <h4>欢迎光临我的个人网站(网站部分内容仍在修改中)</h4>
-                        <p><span class="glyphicon glyphicon-asterisk"></span>这里将展示个人前端作品，技术博客，前端优秀文章分享，未来将新增留言功能。如有好的建议请邮件告知我：<address><span class="glyphicon glyphicon-envelope"></span>beimingmuyu@163.com</address></p>
+                        <p><span class="glyphicon glyphicon-asterisk"></span> 网站将展示个人前端作品，技术博客，前端优秀文章分享，未来将新增留言功能。</p>
+                        <p><span class="glyphicon glyphicon-asterisk"></span> 备案审核等待中...网站将迁入阿里云服务器，更多交互功能和更大的存储空间敬请期待！</p>
+                        <p>如有好的建议请邮件告知我：</p><address><span class="glyphicon glyphicon-envelope"></span> beimingmuyu@163.com</address>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti deserunt dolores eum excepturi inventore, iusto molestias nesciunt officia omnis optio praesentium quasi qui quibusdam quis reiciendis rerum similique soluta!
+                            <span class="glyphicon glyphicon-arrow-left" style="transform: rotateZ(-45deg)"></span> 更多联系方式详见左下角图标~
                         </p>
                     </div>
                 </div>
@@ -62,15 +64,10 @@
             <li id="p2" class="">
                 <div class="mainTab">
                     <div class="row">
-
                         <div class="col-xs-12 col-md-6">
                             <div class="textContainer">
-                                <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#">基本信息</a></li>
-                                    <li><a href="#">专业技能</a></li>
-                                    <li><a href="#">教育背景</a></li>
-                                 </ul>
                                 <p id="jl1">
+                                    <b>姓    名：</b>马积力 <br/>
                                     <b>专    业：</b>软件工程 <br/>
                                     <b>毕业院校：</b>天津大学 <br/>
                                     <b>学    历：</b>本科<br/>
@@ -79,25 +76,25 @@
                                     <b>联系电话：</b>18602800701（成都） <br/>
                                     <b>E - mail：</b>beimingmuyu@163.com <br/>
                                 </p>
-
                                 <p id="jl2">
                                     <b>专业技能:</b><br/>
                                     1、精通HTML5、CSS3，能根据设计图写出符合W3C标准的语义化页面，能处理IE兼容性问题。对H5的新标签如Canvas、表单验证，有丰富的经验。<br/>
                                     2、精通JavaScript(DOM+BOM) 等原生代码，对OOP，原型链，闭包等原理有深刻的理解，能熟练手写原生JS实现各类动效,熟练使用Ajax机制，完成服务器异步交互。<br/>
                                     3、熟练掌握jQuery，熟练运用Bootstrap开发响应式WEB应用并对其原理有一点了解、熟练运用AngularJS开发基于MVC模式页面。<br/>
                                     4、熟悉PHP能写简单的后台交互脚本，对数据库进行操作。精通C语言，熟悉C++。<br/>
-                                    5、熟悉MySQL及SQL Sever数据库，编写基本的增删查改SQL语句脚本。<br/>
-                                    6、熟悉Apache服务器，了解Node.Js，会配置服务器并完成简单的交互并访问数据库，熟悉HTTP协议。<br/>
-                                    7、熟悉WEB APP开发JQMobile移动框架。<br/>
-                                    8、精通Photoshop可独自切图，会修图、抠图及图片美化。<br/>
-                                    9、熟悉3DMax、Maya、CAD等建模软件，了解OpenGL、OpenCv等图形学常用类库。<br/>
-                                    10、了解Easy UI、百度地图插件、了解Web Socket协议。<br/>
+
                                 </p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="textContainer">
                                 <p id="jl3">
+                                    5、熟悉MySQL及SQL Sever数据库，编写基本的增删查改SQL语句脚本。<br/>
+                                    6、熟悉Apache服务器，了解Node.Js，会配置服务器并完成简单的交互并访问数据库，熟悉HTTP协议。<br/>
+                                    7、熟悉WEB APP开发JQMobile移动框架。<br/>
+                                    8、精通Photoshop可独自切图，会修图、抠图及图片美化。<br/>
+                                    9、熟悉3DMax、Maya、CAD等建模软件，了解OpenGL、OpenCv等图形学常用类库。<br/>
+                                    10、了解Easy UI、百度地图插件、了解Web Socket协议。<br/>
                                     <b>教育背景：</b><br/>
                                     2010.09-2014.07 天津大学  本科  软件工程专业<br/>
                                     主修课程：数据结构、计算机网络、数据库设计、网页制作、软件工程、C/C++等。<br/>
@@ -193,13 +190,23 @@
                         </a>
                     </div>
                     <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="#" class="thumbnail">
+                        <a href="http://majili.applinzi.com/" class="thumbnail">
                             <img src="img/draw.jpg" width="240" height="180" alt="JS作品">
                         </a>
                     </div>
                     <div class=" col-md-3 col-sm-6 col-xs-12">
                         <a href="turnBox.html" class="thumbnail">
                             <img src="img/turnbox.jpg" width="240" height="180" alt="JS作品">
+                        </a>
+                    </div>
+					<div class=" col-md-3 col-sm-6 col-xs-12">
+                        <a href="qixi.html" class="thumbnail">
+                            <img src="img/qixi.jpg" width="240" height="180" alt="JS作品">
+                        </a>
+                    </div>
+					<div class=" col-md-3 col-sm-6 col-xs-12">
+                        <a href="lightBlock.html" class="thumbnail">
+                            <img src="img/lightBlock.jpg" width="240" height="180" alt="JS作品">
                         </a>
                     </div>
                 </div>
@@ -212,9 +219,10 @@
             <a href="https://www.zhihu.com/people/beimingmuyu"><i></i></a>
             <b></b>
             <b></b>
+            <span><a href="http://www.miitbeian.gov.cn">京ICP备：16047395号</a></span>
         </footer>
     </div>
-    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/jquery/2.2.4/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index3.js"></script>
 
