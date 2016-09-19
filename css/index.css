@@ -540,6 +540,7 @@ header .icon-bar{
         min-height: 100%;
     }
 }
+/*Pad*/
 @media only screen and (min-width: 768px) {
     #main .mainTab{
         margin-top:120px;
@@ -559,7 +560,7 @@ header .icon-bar{
         height: 60px;
     }
 }
-/*PC-small and pad*/
+/*PC-small*/
 @media only screen and (min-width: 992px) {
     #myNav ul{
         float: none;
@@ -613,4 +614,11 @@ header .icon-bar{
     body{
         height: 100%;
     }
+}
+/*PC-superWidth*/
+@media only screen and (min-width: 1800px) {
+    #p1 h1{
+        margin-top:155px;
+    }
+
 }
