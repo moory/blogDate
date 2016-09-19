@@ -257,6 +257,12 @@ header .icon-bar{
 /*}*/
 #p4 .btn{
     margin:20px 10px;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#p4 .currunt,#p4 .btn:hover{
+    background-color:#337ab7;
+    color:#fff;
 }
 #p4 .modal-img{
     position: absolute;
@@ -270,6 +276,30 @@ header .icon-bar{
     background-color: rgba(255,255,255,0.4);
     z-index: 19;
 }
+#p5 a{
+    display: inline-block;
+    width:250px;
+    height: 190px;
+    position:relative;
+}
+#p5 .front,.back{
+    position:absolute;
+    backface-visibility:hidden;
+    transition:0.6s ease 0s;
+}
+#p5 .front{
+    transform:rotateY(0deg);
+    z-index: 2;
+}
+#p5 .back{
+    width:250px;
+    height: 190px;
+    transform:rotateY(-180deg);
+    position:absolute;
+    z-index: 1;
+}
+#p5 a:hover .front { transform:rotateY(180deg);}
+#p5 a:hover .back { transform:rotateY(0);}
 #main .mainTab{
     width:70%;
     margin-top:80px;
@@ -323,10 +353,10 @@ header .icon-bar{
     left: 10px;
     display: none;
 }
-#footer b:nth-last-child(2){
+#footer b.weibo{
     background: url("../img/weibo_ma.jpg");
 }
-#footer b:nth-last-child(1){
+#footer b.weixin{
     background: url("../img/weixin_ma.jpg");
 }
 #footer span{

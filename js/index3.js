@@ -31,24 +31,32 @@ function prevSlide(now,target){
 //相册动效
 $("#all").click(function(){
     unmiss();
+    $("#p4 .btn").removeClass("currunt");
+    $(this).addClass("currunt");
 });
 $("#btn1").click(function(){
     miss("fruit");
     miss("coike");
     unmiss("drink");
     fly("drink");
+    $("#p4 .btn").removeClass("currunt");
+    $(this).addClass("currunt");
 });
 $("#btn2").click(function(){
     miss("fruit");
     miss("drink");
     unmiss("coike");
     fly("coike");
+    $("#p4 .btn").removeClass("currunt");
+    $(this).addClass("currunt");
 });
 $("#btn3").click(function(){
     miss("drink");
     miss("coike");
     unmiss("fruit");
     fly("fruit");
+    $("#p4 .btn").removeClass("currunt");
+    $(this).addClass("currunt");
 });
 function miss(str){
     $("."+str).animate({

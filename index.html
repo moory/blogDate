@@ -130,16 +130,13 @@
             </li>
             <li id="p4" class="">
                 <div class="mainTab">
-                    <button  class="btn btn-primary" id="all">显示所有</button>
-                    <button  class="btn btn-primary" id="btn1">风景</button>
-                    <button  class="btn btn-primary" id="btn3">静物</button>
-                    <button  class="btn btn-primary" id="btn2">人物</button>
+                    <button  class="btn currunt" id="all">显示所有</button>
+                    <button  class="btn" id="btn1">风景</button>
+                    <button  class="btn" id="btn3">静物</button>
+                    <button  class="btn" id="btn2">人物</button>
                     <div class="row" id="filter">
                         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 content">
-                            <!--<div class="">-->
-                                <!--<div class="modal-img"></div>-->
-                                <img class="drink" src="img/photo/sp01.jpg" alt="摄影作品">
-                            <!--</div>-->
+                            <img class="drink" src="img/photo/sp01.jpg" alt="摄影作品">
                         </div>
                         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 content">
                             <img class="fruit" src="img/photo/sp02.jpg" alt="摄影作品">
@@ -179,34 +176,70 @@
             </li>
             <li id="p5" class="">
                 <div class="mainTab">
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="http://moory.github.io/2048" class="thumbnail">
-                            <img src="img/2048.jpg" width="240" height="180" alt="JS作品">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="http://moory.github.io/2048">
+                            <div class="front thumbnail">
+                                <img src="img/2048.jpg" width="240" height="180" alt="JS作品">
+                            </div>
+                            <div class="back thumbnail">
+                                <h3>2048</h3>
+                                <p>技术栈：原生JavaScript、HTML、CSS、Cookie</p>
+                            </div>
                         </a>
                     </div>
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="http://moory.github.io/Snake" class="thumbnail">
-                            <img src="img/snake.jpg" width="240" height="180" alt="JS作品">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="http://moory.github.io/Snake">
+                            <div class="front thumbnail">
+                                <img src="img/snake.jpg" width="240" height="180" alt="JS作品">
+                            </div>
+                            <div class="back thumbnail">
+                                <h3>贪吃蛇</h3>
+                                <p>技术栈：Photoshop、HTML、CSS、原生JavaScript</p>
+                            </div>
                         </a>
                     </div>
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="http://majili.applinzi.com/" class="thumbnail">
-                            <img src="img/draw.jpg" width="240" height="180" alt="JS作品">
+                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <a href="http://majili.applinzi.com/">
+                            <div class="front thumbnail">
+                                <img src="img/draw.jpg" width="240" height="180" alt="JS作品">
+                            </div>
+                            <div class="back thumbnail">
+                                <h3>你画我猜</h3>
+                                <p>技术栈：HTML、CSS、JavaScript、Ajax、Canvas、PHP、MySQL</p>
+                            </div>
                         </a>
                     </div>
-                    <div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="turnBox.html" class="thumbnail">
-                            <img src="img/turnbox.jpg" width="240" height="180" alt="JS作品">
+                    <div class="  col-md-4 col-sm-6 col-xs-12">
+                        <a href="turnBox.html">
+                            <div class="front thumbnail">
+                                <img src="img/turnbox.jpg" width="240" height="180" alt="JS作品">
+                            </div>
+                            <div class="back thumbnail">
+                                <h3>旋转盒子</h3>
+                                <p>技术栈：HTML、CSS、JavaScript</p>
+                            </div>
                         </a>
                     </div>
-					<div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="qixi.html" class="thumbnail">
-                            <img src="img/qixi.jpg" width="240" height="180" alt="JS作品">
+					<div class=" col-md-4 col-sm-6 col-xs-12">
+                        <a href="qixi.html" >
+                            <div class="front thumbnail">
+                                <img src="img/qixi.jpg" width="240" height="180" alt="JS作品">
+                            </div>
+                            <div class="back thumbnail">
+                                <h3>七夕节日贺卡</h3>
+                                <p>技术栈：Photoshop、HTML、CSS、JavaScript</p>
+                            </div>
                         </a>
                     </div>
-					<div class=" col-md-3 col-sm-6 col-xs-12">
-                        <a href="lightBlock.html" class="thumbnail">
-                            <img src="img/lightBlock.jpg" width="240" height="180" alt="JS作品">
+					<div class=" col-md-4 col-sm-6 col-xs-12">
+                        <a href="lightBlock.html" >
+                            <div class="front thumbnail">
+                                <img src="img/lightBlock.jpg" width="240" height="180" alt="JS作品">
+                            </div>
+                            <div class="back thumbnail">
+                                <h3>点灯游戏</h3>
+                                <p>技术栈：HTML、CSS、JavaScript</p>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -217,12 +250,13 @@
             <i></i>
             <i></i>
             <a href="https://www.zhihu.com/people/beimingmuyu"><i></i></a>
-            <b></b>
-            <b></b>
+            <b class="weibo"></b>
+            <b class="weixin"></b>
             <span><a href="http://www.miitbeian.gov.cn">京ICP备：16047395号</a></span>
         </footer>
     </div>
-    <script src="http://lib.sinaapp.com/js/jquery/2.2.4/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!--<script src="http://lib.sinaapp.com/js/jquery/2.2.4/jquery-2.2.4.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index3.js"></script>
 
