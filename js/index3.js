@@ -2,6 +2,10 @@
  * Created by moory on 2016/9/6.
  */
 
+//载入页控制
+window.onload=function(){
+  $("body").addClass("loaded");
+};
 //轮播控制
 $("#myNav ul").on("click","li",function(e){
     var now=$("#myNav li.active").index("#myNav li")+1;
