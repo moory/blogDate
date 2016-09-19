@@ -116,3 +116,14 @@ $("#footer>i").on("mouseout",function(){
     var num=$(this).index();
     $("#footer b:nth-of-type("+num+")").css("display","none");
 });
+
+//模态框事件
+$("#modal").click(function(){
+    $(this).hide();
+});
+$("#p4 img").click(function(){
+    var src=$(this).attr("src");
+    src=src.replace("sp","p");
+    $("#modal img").attr("src",src);
+    $("#modal").show();
+});
