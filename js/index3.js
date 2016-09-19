@@ -104,7 +104,7 @@ function fly(str){
     $("."+str).each(function(i,elem){
         $(this).parent().animate({
             "left":address[i][0],
-            "top":address[i][1],
+            "top":address[i][1]
         },500,function(){
             $(".content").css("position","");
         });

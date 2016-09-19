@@ -224,8 +224,9 @@ header .icon-bar{
 
 }
 #myNav ul li a{
-    width:160px;
-    height:20px;line-height: 20px;
+    width:130px;
+    height:20px;
+    line-height: 20px;
 }
 #myNav a:hover,#myNav li.active a{
     color: #337ab7;
@@ -395,9 +396,6 @@ header .icon-bar{
 #p4 img{
     border-radius: 10px;
 }
-/*#p4 .content>div{*/
-    /*position: relative;*/
-/*}*/
 #p4 .btn{
     margin:20px 10px;
     background-color:rgba(255,255,255,0.7);
@@ -442,7 +440,7 @@ header .icon-bar{
     z-index: 1;
 }
 #p5 a:hover .front { transform:rotateY(180deg);}
-#p5 a:hover .back { transform:rotateY(0);}
+#p5 a:hover .back { transform:rotateY(0deg);}
 #main .mainTab{
     width:70%;
     margin-top:80px;
@@ -538,6 +536,28 @@ header .icon-bar{
     body{
         height: 100%;
     }
+    html{
+        min-height: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #main .mainTab{
+        margin-top:120px;
+    }
+    #p1 h1{
+        margin-top:120px;
+        margin-bottom:68px;
+    }
+    #myNav ul {
+        float: none;
+        display: table;
+        margin: 0 auto;
+    }
+
+    #myNav ul li a {
+        width: 95px;
+        height: 60px;
+    }
 }
 /*PC-small and pad*/
 @media only screen and (min-width: 992px) {
@@ -551,15 +571,17 @@ header .icon-bar{
         height: 60px;
     }
     #p1 h1{
-        margin-top:185px;
+        margin-top:110px;
         margin-bottom:68px;
     }
     #main .mainTab{
         margin-top:150px;
     }
     html{
+        min-height: 100%;
+    }
+    body{
         height: 100%;
-        min-height: 960px;
     }
 
 }
@@ -575,7 +597,7 @@ header .icon-bar{
         height: 80px;
     }
     #p1 h1{
-        margin-top:155px;
+        margin-top:135px;
         margin-bottom:68px;
     }
     #main .mainTab{
@@ -587,5 +609,8 @@ header .icon-bar{
     html{
         height: 100%;
         min-height: 960px;
+    }
+    body{
+        height: 100%;
     }
 }
