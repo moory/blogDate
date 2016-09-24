@@ -30,7 +30,7 @@ function send(){
             }
         }
     };
-    xhr.open('POST','cun.php',true);
+    xhr.open('POST','data/cun.php',true);
     xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
     xhr.send(`addr=${addr}`);
 }
