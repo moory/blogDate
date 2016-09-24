@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>你画我猜</title>
+	<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div id="mask">
+	<p>
+		<button id="huaBtn" >我要画</button>
+		<button id="caiBtn" >我要猜</button>
+	</p>
+</div>
+<div id="outer">
+    <div id="player">
+		<p>
+			我要<button id="btn">猜</button>
+		</p>
+		<p>
+			你要画的题目是 <span id="answer">undefined</span>
+		</p>
+		<p>
+			提示：答案共 <span id="answerNum">NaN</span>个字
+		</p>
+    </div>
+	<div id="playground">
+		<div id="eventFloor">
+		   <div id="hbFloor"></div>
+		   <div id="yqFloor"></div>
+		   <div id="lineFloor"></div>
+		</div>
+		<canvas id="canvas" width="500px" height="500px"></canvas>
+		<iframe id="cai" src="cai.html" frameborder="0" scrolling="no"></iframe>
+		<br> <p>颜色</p>
+		<div id="color">
+		    <button id="colorBoard"></button>
+		    <button id="r">R</button>
+		    <button id="g">G</button>
+		    <button id="b">B</button>
+			<input type="color" id="customColor"/>
+		    <button id="hb">笔</button>
+		    <button id="yq">漆</button>
+		    <button id="clear">删</button>
+		    <button id="line">线</button>
+		    <div id="lw1"><div class="show"></div></div>
+		    <div id="lw2"><div class="hide"></div></div>
+		    <div id="lw3"><div class="hide"></div></div>
+		</div>
+	</div>
+    <!-- <img src="#" alt="" id="myimg"/> -->
+    <div id="container">
+	   <div id="chat_msg">
+		  <div class="msg_text">
+			 <span>系统:</span>
+			 <p>欢迎来玩你画我猜！玩法：一个玩家负责根据提示词绘画，其他玩家通过画面猜想正确答案并将答案发送到对话框</p>
+		  </div>
+	   </div>
+	   <div id="msg_send">
+		  <img id="bq" src="wechat/100.gif">
+		  <input type="text" id="msg" onkeydown="enterClick(event)"/>
+		  <button id="sendMsg">发送</button>
+		  <ul id="bqk" style="display:none"></ul>
+	   </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
