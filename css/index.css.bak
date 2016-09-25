@@ -382,7 +382,7 @@ header .icon-bar{
 #p2 .mainTab{
     max-width: 1200px;
 }
-#p3 .textContainer{
+#p3 .content{
 	margin-bottom:10px;
 }
 #p4 .row{
