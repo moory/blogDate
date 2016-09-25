@@ -1,0 +1,43 @@
+body,h1,img{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#ddd;
+}
+#playground{
+	width:1280px;
+	height:659px;
+	margin:0 auto;
+	position:relative;
+	top:100px;
+	background:url("../images/playground.png");
+}
+#playground img{position:absolute;z-index:10;}
+h1{
+	position:absolute;
+	top:25px;
+	left:590px;
+	margin:0 auto;
+	color:#365410;
+	font:40px "microsoft yahei";
+}
+#start{
+	width:120px;
+	height:52px;
+	position:absolute;
+	top:25px;
+	left:76px;
+	font-size: 30px;
+	font-family: "microsoft yahei", "Open Sans", sans-serif;
+	font-weight: bold;
+}
+#stop{
+	width:120px;
+	height:52px;
+	position:absolute;
+	top:25px;
+	right:76px;
+	background: url("../images/stop.png");
+
+}

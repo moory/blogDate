@@ -51,7 +51,7 @@
 		display:block;
 		width:170px;
 		height:176px;
-		background:url("images/catHead.png");
+		background:url("images/head.png");
 		position:absolute;
 		top:430px;
 		left:576px;
